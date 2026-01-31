@@ -16,11 +16,9 @@ describe("CLI", () => {
   });
 
   it("alternates text", () => {
-    const output = execSync(`node ${CLI} "donald can't do that!!!"`)
-      .toString()
-      .trim();
+    const output = execSync(`node ${CLI} "Hello World!!!"`).toString().trim();
 
-    expect(output).toBe("DoNaLd CaN't Do ThAt!!!");
+    expect(output).toBe("HeLlO wOrLd!!!");
   });
 
   it("respects --start lower", () => {

@@ -1,5 +1,5 @@
 {
-  "name": "alternating-case",
+  "name": "@jstiehl/alternating-case",
   "version": "1.0.0",
   "description": "Convert text to alternating uppercase and lowercase letters",
   "type": "module",
@@ -10,11 +10,10 @@
       "types": "./dist/types/index.d.ts"
     }
   },
-  "bin": {
-    "alternating-case": "./dist/esm/cli.js"
-  },
   "files": [
-    "dist"
+    "dist/esm",
+    "dist/cjs",
+    "dist/types"
   ],
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
@@ -28,7 +27,7 @@
     "case",
     "utility"
   ],
-  "author": "Your Name",
+  "author": "James Stiehl <jstiehl@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.0.0",

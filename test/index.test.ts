@@ -3,8 +3,6 @@ import { alternatingCase } from "../src/index";
 
 describe("alternatingCase", () => {
   it("alternates letters and ignores punctuation", () => {
-    expect(alternatingCase("donald can't do that!!!")).toBe(
-      "DoNaLd CaN't Do ThAt!!!",
-    );
+    expect(alternatingCase("Hello World!!!")).toBe("HeLlO wOrLd!!!");
   });
 });
