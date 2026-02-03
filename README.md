@@ -2,8 +2,6 @@
 
 Convert text to alternating uppercase and lowercase letters.
 
-> ESM + CJS compatible. Includes TypeScript types.
-
 ## Installation
 
 ```bash
@@ -26,14 +24,6 @@ console.log(alternatingCase("hello world"));
 
 console.log(alternatingCase("hello world", { start: "lower" }));
 // Output: hElLo wOrLd
-```
-
-### CJS
-
-```js
-const { alternatingCase } = require("@jstiehl/alternating-case");
-
-console.log(alternatingCase("hello world"));
 ```
 
 ---

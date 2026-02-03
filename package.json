@@ -1,6 +1,6 @@
 {
   "name": "@jstiehl/alternating-case",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert text to alternating uppercase and lowercase letters",
   "type": "module",
   "exports": {
@@ -12,14 +12,14 @@
   },
   "files": [
     "dist/esm",
-    "dist/cjs",
     "dist/types"
   ],
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:cjs": "tsc -p tsconfig.cjs.json",
-    "test": "npm run build &&vitest"
+    "test": "npm run build && vitest",
+    "clean": "rm -rf dist"
   },
   "keywords": [
     "string",
